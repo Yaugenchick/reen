@@ -1,0 +1,66 @@
+@media (max-width:1460px) {
+    .works .list {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1260px) {
+    .header .nav {
+        margin-left: 40px;
+    }
+}
+@media (max-width:1216px) {
+    .works .list2 .item {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:1200px) {
+    .header .nav {
+        margin-left: 15px;
+    }
+    .header .nav a {
+        padding: 10px;
+    }
+}
+/*прячем меню*/
+@media (max-width:1024px) {
+    .header .nav .nav-toggle {
+        display: inline-block;
+    }
+    #nav-toggle:checked ~ ul {
+        display: block !important;
+    }
+   .header .nav ul {
+        display: none !important;
+
+        position: fixed;
+        top:0;
+        right:0;
+        background-color: #000;
+        width: 300px;
+        height: 100%;
+        opacity: .7;
+    }
+    .header .nav ul li,
+    .header .nav ul li a {
+        display: block;
+    }
+    .header .nav ul li a {
+        color:#fff;
+        font-size: 21px;
+        padding: 20px;
+        border-bottom: 1px solid #fff;
+    }
+}
+/*если кнопка"nav-toggle"включена то идет обращение к соседнему элементу(который скрыт,то есть он откроется)*/
+@media (max-width:1024px) {
+    .prime .list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .prime .list .item {
+        margin-bottom: 30px;
+    }
+    .work .list .item {
+        flex-wrap: wrap;
+    }
+}
